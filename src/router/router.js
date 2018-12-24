@@ -158,7 +158,28 @@ export default new Router({
       name: 'baseContact',
       component: () =>
         import(/* webpackChunkName: 'data' */ '@/views/mine/contact/contact.vue'),
-      meta: { webview, tabBar: true },
+      meta: { webview, tabBar: false },
+    },
+    {
+      path: '/examStu',
+      name: 'examStu',
+      component: () =>
+        import(/* webpackChunkName: 'data' */ '@/views/application/exam/examStu.vue'),
+      meta: { webview, tabBar: false },
+    },
+    {
+      path: '/examTea',
+      name: 'examTea',
+      component: () =>
+        import(/* webpackChunkName: 'data' */ '@/views/application/exam/examTea.vue'),
+      meta: { webview, tabBar: false },
+    },
+    {
+      path: '/examTeaResult',
+      name: 'examTeaResult',
+      component: () =>
+        import(/* webpackChunkName: 'data' */ '@/views/application/exam/examTeaResult.vue'),
+      meta: { webview, tabBar: false },
     },
   ],
 });

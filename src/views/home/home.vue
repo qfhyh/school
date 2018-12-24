@@ -28,7 +28,7 @@
             <div class="line"></div>
             <div class="wrapper_bottom">
                 <ul>
-                    <li class="application">
+                    <li class="application"  @click="jump('baseContact')">
                         <img src="../../assets/myedu/kg.png" alt="">
                         <p>通讯录</p>
                     </li>
@@ -41,13 +41,13 @@
                         <span class="small">NEW</span>
                         <p>课表2</p>
                     </li>
-                    <li class="application">
+                    <li class="application" @click="jump('examStu')">
                         <img src="../../assets/myedu/kg.png" alt="">
-                        <p>考勤</p>
+                        <p>学生成绩</p>
                     </li>
-                    <li class="application">
+                    <li class="application" @click="jump('examTea')">
                         <img src="../../assets/myedu/kg.png" alt="">
-                        <p>考勤</p>
+                        <p>教师成绩</p>
                     </li>
                     <li class="application">
                         <img src="../../assets/myedu/kg.png" alt="">

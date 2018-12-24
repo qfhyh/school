@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vant from 'vant';
+import echarts from 'echarts';
 import moment from 'moment';
 import 'vant/lib/vant-css/index.css';
 import '@/styles/index.scss';
@@ -13,7 +14,7 @@ import './icons/';
 
 // 绑定 js-bridge-sdk 到 Vue 原型
 // Vue.prototype.$overWatch = OWSDK;
-
+Vue.prototype.$echarts = echarts;
 // 绑定 js-bridge-sdk 到 window 对象
 // window.overWatch = OWSDK;
 
@@ -32,7 +33,7 @@ import './icons/';
 // });
 
 Vue.config.productionTip = false;
-
+Vue.use(echarts);
 Vue.use(Vant);
 
 Object.defineProperty(Vue.prototype, '$moment', { value: moment });

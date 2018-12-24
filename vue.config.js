@@ -29,7 +29,7 @@ module.exports = {
         changeOrigin: true,
       },
       '/api': {
-        target: 'http://192.168.10.89:8090/',
+        target: 'http://192.168.10.90:8090/',
         pathRewrite: {
           '^/api': '',
         },
